@@ -1,0 +1,38 @@
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 2;
+
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  height: 65px;
+
+  background-color: var(--color-white);
+  border-bottom: 1px solid var(--color-athens-gray);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .header {
+    height: 65px;
+  }
+
+  .header--with-menu .button {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .header--with-menu .button {
+    display: flex;
+  }
+
+  .header--with-menu .user__name {
+    display: none;
+  }
+}

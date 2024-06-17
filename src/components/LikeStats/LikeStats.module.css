@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.value {
+  margin: 0;
+  margin-left: 6px;
+
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-regular);
+  font-family: var(--font-family-PT-Sans);
+  color: var(--color-regent-gray);
+  line-height: 16.84px;
+}

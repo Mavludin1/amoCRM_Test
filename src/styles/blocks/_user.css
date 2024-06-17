@@ -1,0 +1,54 @@
+.user {
+  display: flex;
+  align-items: center;
+
+  padding: 13px 100px 13px 19px;
+}
+
+.user__name {
+  margin-right: 10px;
+  padding-top: 1px;
+
+  font-family: var(--font-family-PT-Sans);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-medium);
+  color: var(--color-regent-gray);
+
+  max-width: 77px;
+
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.user__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 40px;
+  height: 40px;
+
+  border-radius: 50%;
+  text-decoration: none;
+  overflow: hidden;
+  background-color: var(--color-periwinkle-gray);
+}
+
+.user__photo {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .user {
+    padding: 0 20px 0 19px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .user {
+    padding: 0 20px 0 0;
+    margin-left: auto;
+  }
+}

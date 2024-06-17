@@ -1,0 +1,39 @@
+.button {
+  box-sizing: border-box;
+  user-select: none;
+  padding: 0 6px 4px 5px;
+  margin-right: 25px;
+  position: relative;
+}
+
+.button input {
+  position: absolute;
+  height: 0;
+  width: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.button input:checked + span::after {
+  content: "";
+  position: absolute;
+  left: -5px;
+  bottom: 0;
+  width: calc(100% + 10px); 
+  height: 3px;
+  background-color: var(--color-cornflower-blue);
+}
+
+.button span {
+  display: inline-block;
+  text-align: center;
+  height: 28px;
+  box-sizing: border-box;
+  font-size: var(--font-size-medium);
+  font-weight: var(--font-weight-regular);
+  font-family: var(--font-family-PT-Sans);
+  line-height: 19.5px;
+  cursor: pointer;
+  position: relative;
+}
+

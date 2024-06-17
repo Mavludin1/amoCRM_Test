@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
+
+  height: 19px;
+  width: 422px;
+}
+
+.label {
+  display: inline-block;
+  font-family: var(--font-family-PT-Sans);
+
+  font-size: var(--font-size-medium);
+  font-weight: var(--font-weight-small);
+  color: var(--color-regent-gray);
+  line-height: 19.41px;
+  margin-right: auto;
+
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    width: 335px;
+  }
+}

@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  width: 1240px;
+  margin: 126px auto 70px auto;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .container {
+    display: flex;
+    width: 768px;
+    margin: 0 auto;
+    margin-top: 107px;
+  }
+
+  .menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    display: flex;
+    width: 375px;
+    margin: 0 auto;
+    margin-top: 135px;
+  }
+
+  .menu {
+    display: none;
+  }
+}

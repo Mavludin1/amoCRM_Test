@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="{{ 'main.css'|manifest }}" rel="stylesheet">
+  <title>amoCRM</title>
+</head>
+<body>
+  <div class="wrapper">
+    {% include 'blocks/_header.twig' %}
+    <div id="root"></div>
+    {% include 'blocks/_footer.twig' %}
+  </div>
+</body>
+<script src="{{ 'main.js'|manifest }}"></script>
+</html>
